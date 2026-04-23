@@ -1,0 +1,10 @@
+<Project>
+  <!-- Standalone tool — opt out of repo-wide analyzers and trimming -->
+  <PropertyGroup>
+    <EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
+    <EnableTrimAnalyzer>false</EnableTrimAnalyzer>
+    <EnableSingleFileAnalyzer>false</EnableSingleFileAnalyzer>
+    <EnableAotAnalyzer>false</EnableAotAnalyzer>
+    <NoWarn>$(NoWarn);IDE0073;SA1503;SA1122;IL2026;IL3050;CA2007;CA1834</NoWarn>
+  </PropertyGroup>
+</Project>
