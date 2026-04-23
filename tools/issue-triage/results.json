@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "repo": "dotnet/templating",
+    "fetchedAt": "2026-04-23T20:30:24.6930740Z",
+    "totalIssues": 0,
+    "triaged": 10
+  },
+  "issues": [
+    {
+      "number": 10085,
+      "title": "Consolidate \u0060dotnet/templating\u0060 into \u0060dotnet/sdk\u0060",
+      "url": "https://github.com/dotnet/templating/issues/10085",
+      "bucket": "close-resolved-by-consolidation",
+      "confidence": "high",
+      "priority": "n/a",
+      "reasoning": "This is the consolidation tracking issue itself \u2014 it tracks the work of moving dotnet/templating into dotnet/sdk. Once the consolidation is complete and the repo is archived, this issue is inherently resolved. Phases 1-2 are already done, with 3-5 remaining. It has active maintainer discussion and is the canonical reference for the migration.",
+      "summary": "Meta-tracking issue for consolidating dotnet/templating into dotnet/sdk",
+      "triagedAt": "2026-04-23T20:30:47.4455478Z"
+    },
+    {
+      "number": 9875,
+      "title": "Computed value with reference to other symbols",
+      "url": "https://github.com/dotnet/templating/issues/9875",
+      "bucket": "close-not-actionable",
+      "confidence": "high",
+      "priority": "n/a",
+      "reasoning": "This is a usage question, not a bug or feature request. The author self-resolved in the first comment by finding the existing \u0027generated/switch\u0027 mechanism. The remaining question is a thought experiment about advanced template authoring, which belongs on Stack Overflow or GitHub Discussions rather than as a trackable work item.",
+      "summary": "User asks how to use computed values referencing other symbols in template config, then self-answers using the existing generated/switch mechanism.",
+      "triagedAt": "2026-04-23T20:31:11.2680097Z"
+    },
+    {
+      "number": 9859,
+      "title": "Question: How to sync templates and avoid duplicates for custom host",
+      "url": "https://github.com/dotnet/templating/issues/9859",
+      "bucket": "close-not-actionable",
+      "confidence": "high",
+      "priority": "n/a",
+      "reasoning": "This is a usage question from an external user about how to integrate with the Template Engine API for a custom host. It has zero upvotes, zero comments, no maintainer engagement, and is explicitly framed as a question (\u0027Question:\u0027 in title, \u0027Would love some guidance\u0027 in body). This belongs on GitHub Discussions or Stack Overflow, not as a trackable work item.",
+      "summary": "User asking for guidance on syncing SDK templates and avoiding duplicates when building a custom Template Engine host",
+      "triagedAt": "2026-04-23T20:31:36.1971837Z"
+    },
+    {
+      "number": 9768,
+      "title": "Add demo to show how to setup multiple .NET versions",
+      "url": "https://github.com/dotnet/templating/issues/9768",
+      "bucket": "close-not-actionable",
+      "confidence": "high",
+      "priority": "n/a",
+      "reasoning": "This is a documentation/sample request from an external user with zero upvotes, zero comments, and no maintainer engagement. It asks for a demo in the dotnet-template-samples folder, which is a usage/guidance question rather than a trackable bug or feature request in the engine itself. No community signal or maintainer interest.",
+      "summary": "Request for a multi-targeting .NET version demo in the template samples folder",
+      "triagedAt": "2026-04-23T20:31:57.6723083Z"
+    },
+    {
+      "number": 9763,
+      "title": "Internal unofficial CI failing on some template tests",
+      "url": "https://github.com/dotnet/templating/issues/9763",
+      "bucket": "close-resolved-by-consolidation",
+      "confidence": "high",
+      "priority": "n/a",
+      "reasoning": "This issue is about internal CI test failures on backflow validation branches related to the repo consolidation process. The failures occur in cross-repo CI infrastructure (internal unofficial builds for backflow). Consolidating templating into dotnet/sdk inherently resolves these cross-repo CI and build infrastructure friction points. Zero community interest (no upvotes, no comments), and the author is reporting an infrastructure issue, not a product bug.",
+      "summary": "Internal CI test failures on backflow validation branches due to network isolation in template tests",
+      "triagedAt": "2026-04-23T20:32:19.4828883Z"
+    },
+    {
+      "number": 9714,
+      "title": "[10.0.2xx] Remove IDE0370 NoWarn workaround",
+      "url": "https://github.com/dotnet/templating/issues/9714",
+      "bucket": "transfer-to-sdk",
+      "confidence": "high",
+      "priority": "low",
+      "reasoning": "This is a legitimate cleanup task filed by a member (mthalman) to remove a temporary NoWarn workaround for IDE0370 after a VMR rebootstrap. It has active maintainer discussion from January 2026 and is a concrete, actionable code change. Since the code is moving to dotnet/sdk, this cleanup work should be tracked there.",
+      "summary": "Remove temporary IDE0370 NoWarn workaround and unnecessary null-forgiving operators after VMR rebootstrap",
+      "triagedAt": "2026-04-23T20:32:43.0061955Z"
+    },
+    {
+      "number": 9678,
+      "title": "SSL Error When Searching Templates from CLI on MacOS",
+      "url": "https://github.com/dotnet/templating/issues/9678",
+      "bucket": "close-not-actionable",
+      "confidence": "medium",
+      "priority": "n/a",
+      "reasoning": "This is a user-specific SSL/certificate revocation check issue on macOS, not a product bug. The user confirms the URL works in browsers and curl, indicating a local environment configuration problem (likely macOS certificate trust store or CRL checking). Zero upvotes, zero comments, no labels, and no maintainer engagement suggest low community impact. This is a support question better suited for GitHub Discussions or Stack Overflow.",
+      "summary": "User reports SSL RevocationStatusUnknown error when running \u0027dotnet new search\u0027 on macOS, likely a local certificate trust store issue.",
+      "triagedAt": "2026-04-23T20:33:08.0605128Z"
+    },
+    {
+      "number": 9576,
+      "title": "Supporting multiple frameworks with code differences doesn\u0027t work",
+      "url": "https://github.com/dotnet/templating/issues/9576",
+      "bucket": "close-not-actionable",
+      "confidence": "medium",
+      "priority": "n/a",
+      "reasoning": "This is a usage question about how to author multi-targeted templates with framework-specific code, not a bug in the template engine. The template engine is working as designed \u2014 C# preprocessor directives like #if NET10_0 are processed by the engine. The author is asking \u0027Is there another way to do this?\u0027 which is a how-to question suited for Stack Overflow or GitHub Discussions. Zero upvotes, zero comments, and no labels further suggest low community impact.",
+      "summary": "User asking how to combine C# preprocessor directives with template engine conditionals for multi-framework templates",
+      "triagedAt": "2026-04-23T20:33:31.7241504Z"
+    },
+    {
+      "number": 9569,
+      "title": "Consider adding an option to set a condition, like Framework, when defining a parameter",
+      "url": "https://github.com/dotnet/templating/issues/9569",
+      "bucket": "transfer-to-sdk",
+      "confidence": "medium",
+      "priority": "low",
+      "reasoning": "This is a legitimate feature request for conditional parameter visibility based on target framework in template definitions. It has clear technical substance and describes a real product gap. However, it has zero community signal (no upvotes, no comments) and the author is an external user. It\u0027s relatively recent (Nov 2025) so not stale, but low priority given lack of engagement.",
+      "summary": "Feature request to support conditional parameter visibility based on target framework in template host configuration",
+      "triagedAt": "2026-04-23T20:33:56.1641021Z"
+    },
+    {
+      "number": 9568,
+      "title": "Exclude doesnt appear to be working with condition",
+      "url": "https://github.com/dotnet/templating/issues/9568",
+      "bucket": "close-not-actionable",
+      "confidence": "high",
+      "priority": "n/a",
+      "reasoning": "This is a usage/support question (\u0027what am I doing wrong here\u0027) rather than a bug report. The user is asking for help configuring their template.json, with no evidence of an actual engine bug. No repro steps against a confirmed defect, zero community engagement (0 upvotes, 0 comments), and no labels. This belongs on Stack Overflow or GitHub Discussions.",
+      "summary": "User asking for help with conditional file exclusion in template.json configuration",
+      "triagedAt": "2026-04-23T20:34:17.8808813Z"
+    }
+  ]
+}
