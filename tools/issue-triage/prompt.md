@@ -34,17 +34,17 @@ Weigh these factors when making your decision:
 
 ## Priority Assessment
 
-Also assign a priority level for issues you recommend transferring:
+Assign a priority level for **all** issues, regardless of bucket. Priority helps the team understand the relative importance even for issues being closed or flagged for review:
 - **critical**: Blocking users, data loss, security issue
 - **high**: Significant bug or widely-requested feature with strong community signal
 - **medium**: Legitimate issue or request with moderate interest
-- **low**: Minor improvement, edge case, or nice-to-have
+- **low**: Minor improvement, edge case, nice-to-have, or usage question with no community signal
 
 ## Output Format
 
 **IMPORTANT**: You must respond with ONLY a single JSON block and nothing else. No markdown fences, no explanation text outside the JSON. Just the raw JSON object:
 
-{"number": <issue_number>, "bucket": "<bucket>", "confidence": "<high|medium|low>", "priority": "<critical|high|medium|low|n/a>", "reasoning": "<2-3 sentence explanation>", "summary": "<one-line summary of the issue>"}
+{"number": <issue_number>, "bucket": "<bucket>", "confidence": "<high|medium|low>", "priority": "<critical|high|medium|low>", "reasoning": "<2-3 sentence explanation>", "summary": "<one-line summary of the issue>"}
 
 ## Rules
 
